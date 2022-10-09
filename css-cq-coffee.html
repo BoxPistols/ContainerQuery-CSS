@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#4C566A" />
+    <!-- CSS -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <div style="margin-bottom: 30px">
+        <p style="text-align: center">
+          Click these button to change the card size, or<br />drag the bottom
+          right corner of the card to change its size.
+        </p>
+        <div class="button-container">
+          <button data-size="300px">Container = 300px</button>
+          <button data-size="500px">Container = 500px</button>
+          <button data-size="700px">Container = 700px</button>
+          <button data-size="90vw">Container = 90vw</button>
+          <button data-size="auto">Container = auto</button>
+        </div>
+      </div>
+      <article class="card">
+        <div class="coffee">
+          <h1>Espresso</h1>
+          <img src="https://jec.fyi/assets/img/demo/cof-espresso.jpg" />
+          <p>
+            Espresso is the name of a highly concentrated, bittersweet coffee
+            originating in Italy in the early 20th century. Each shot of
+            espresso is made to order upon customer request, as opposed to being
+            brewed in anticipation of demand.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </article>
+      <script>
+        document.querySelectorAll("button").forEach((e) => {
+          e.addEventListener("click", () => {
+            document.querySelector("article.card").style.width = e.dataset.size
+          })
+        })
+      </script>
+    </main>
+  </body>
+</html>
