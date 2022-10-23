@@ -3,5 +3,6 @@
     "activityBar.background": "#302F01",
     "titleBar.activeBackground": "#434201",
     "titleBar.activeForeground": "#FEFDC5"
-  }
+  },
+  "inline-bookmarks.view.showVisibleFilesOnly": false
 }

@@ -181,7 +181,7 @@ button {
   }
 }
 
-@container (inline-size > calc(90vw - 60px)) {
+@container (inline-size > calc(90vw)) {
   .coffee h1 {
     color: teal;
   }
