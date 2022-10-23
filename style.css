@@ -23,6 +23,10 @@ body {
   background-color: #eceff4;
 }
 
+.wrap {
+  padding: 20px;
+}
+
 p {
   line-height: 1.6;
 }
@@ -31,7 +35,7 @@ hr {
   display: none;
   max-width: 90%;
   height: 1px;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   opacity: 0.3;
 }
 
@@ -129,14 +133,14 @@ button {
 /* --- container --- */
 /* 400超えると文章表示 */
 
-@container(inline-size < 399px) {
+@container (inline-size < 399px) {
   .coffee h1 {
     font-size: 1.4rem;
     text-align: center;
   }
 }
 
-@container(inline-size > 400px) {
+@container (inline-size > 400px) {
   .coffee p {
     display: block;
   }
@@ -148,7 +152,7 @@ button {
 
 /* TODO: 余白も計算される？ */
 /* @container(inline-size >=calc(500px)) { */
-@container(inline-size >=calc(500px - 44px)) {
+@container (inline-size >=calc(500px - 44px)) {
   .coffee h1 {
     color: tomato;
   }
@@ -158,8 +162,7 @@ button {
   }
 }
 
-
-@container(inline-size > 600px) {
+@container (inline-size > 600px) {
   .coffee article {
     margin: auto 20px;
   }
@@ -178,7 +181,7 @@ button {
   }
 }
 
-@container(inline-size > calc(90vw - 60px)) {
+@container (inline-size > calc(90vw - 60px)) {
   .coffee h1 {
     color: teal;
   }
