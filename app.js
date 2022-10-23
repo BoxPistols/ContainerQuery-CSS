@@ -19,7 +19,7 @@
     const styleCard = window.getComputedStyle(card)
     let paddingCard =
       parseInt(styleCard.paddingLeft) + parseInt(styleCard.paddingRight)
-    view.innerHTML = styleCard.width + " & padding-total: " + paddingCard + "px"
+    view.innerHTML = parseInt(styleCard.width) + " & padding-total: " + paddingCard + "px"
   }
   widthCards()
 
