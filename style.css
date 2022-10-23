@@ -24,7 +24,11 @@ body {
 }
 
 .wrap {
-  padding: 20px;
+  container-type: inline-size;
+}
+
+h1 {
+  text-align: center;
 }
 
 p {
@@ -56,7 +60,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   margin: 1vh auto;
+  background: #234;
+  color: #ccc;
+  max-width: fit-content;
+}
+
+@container (inline-size < 600px) {
+  .view-wrap {
+    background: #234;
+    color: tomato;
+  }
 }
 
 .view {
